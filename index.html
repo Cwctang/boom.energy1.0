@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style/style.css" rel="stylesheet" type="text/css">
+    <script src="./js/code.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<header>
+    <img src="./img/Logo Energy.png" class="logo">
+    <p id="drop-nav">&#9776;</p>
+    <article id="nav-box">
+        <nav id="menu">
+            <a href="index.html">Homepage</a>
+            <a href="bedrijfsinfo.html">Bedrijfsinfo</a>
+            <a href="evenementen.php">Nieuws & Evenement</a>
+            <a href="aanbiedingen.php">Aanbiedingen</a>
+            <a href="webshop.html">Webshop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </article>
+</header>
+<body>
+    <section class="kop-een">
+        <article class="text-een">
+            <h2><b>PROBEER HET ZELF</b></h2>
+            <h1>BERIJK NIEUWE<br> GRENZEN MET ONZE<br> ENERGY DRINK</h1>
+            <p>Probeer al onze smaken!</p>
+            <button class="btn warning" onclick="document.location='./webshop.html'">SHOP NOW</button>
+        </article>
+        <article class="orange-image">
+            <img src="./img/Orange.png" alt="Blikje orange energy" style="height: 500px;">
+        </article>
+    </section>
+    <section class="producten">
+        <article class="text-een">
+            <h2>Onze producten</h2>
+        </article>
+        <article class="blikjes">
+            <div class="image">
+                <img class="image__img" class="color" src="./img/Strawberry.png" alt="Bricks" style="height: 400px; width: 200px;" onclick="document.location='./webshop.html'">
+                <div class="image__overlay image__overlay--primary" onclick="document.location='./webshop.html'">
+                    <div class="image__title">Meer informatie?</div>
+                    <p class="image__description">
+                        Klik dan hier!
+                    </p>
+                </div>
+            </div>
+            <div class="image">
+                <img class="image__img" class="color" src="./img/Apple.png" alt="Bricks" style="height: 400px; width: 200px;" onclick="document.location='./webshop.html'">
+                <div class="image__overlay image__overlay--primary" onclick="document.location='./webshop.html'">
+                    <div class="image__title">Meer informatie?</div>
+                    <p class="image__description" onclick="document.location='./webshop.html'">
+                        Klik dan hier!
+                    </p>
+                </div>
+            </div>
+            <div class="image">
+                <img class="image__img" class="color" src="./img/Orange.png" alt="Bricks" style="height: 400px; width: 200px;" onclick="document.location='./webshop.html'">
+                <div class="image__overlay image__overlay--primary" onclick="document.location='./webshop.html'">
+                    <div class="image__title">Meer informatie?</div>
+                    <p class="image__description">
+                        Klik dan hier!
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="kop-twee">
+        <article class="text-een">
+            <h2><b>NIEUWS EN EVENEMENTEN</b></h2>
+            <h1 class="informatie">WIL JE MEER INFORMATIE WETEN<br>OVER ONZE PRODUCTEN OF<br>EVENEMENTEN KLIK DAN HIER<br>ONDER OP DE KNOP!</h1>
+            <button class="btn warning" onclick="document.location='./evenementen.php'">KLIK HIER!</button>
+        </article>
+        <div class="w3-content w3-section" style="max-width:400px">
+            <img class="mySlides" src="./img/three.jpg" style="width: 400px; height: 200px;">
+            <img class="mySlides" src="./img/two.jpg" style="width: 400px; height: 200px;">
+            <img class="mySlides" src="./img/four.jpg" style="width: 400px; height: 200px;">
+      </div>
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+<footer>
+<section id="Footer">
+        <article class="adres-tijd">
+        <h1 class="adres" style="color: #FF8700; padding-left: 15px;">Adres:</h1><br>
+        <p>Betaplein 18</p>
+        <p>2321 KS</p>
+        <p>Leiden</p>
+        </article>
+        <article class="adres-tijd">
+        <h1 style="color: #FF8700;">Contacgegevens:</h1><br>
+        <p style="color: #FF8700;">Telefoonnummer:</p>
+        <p>+310882221777</p><br>
+        <p style="color: #FF8700;">Email:</p>
+        <p>boom.energy@gmail.com</p>
+        </article>
+        <article class="adres-contact-media">
+        <h1 style="color: #FF8700;">Social Media:</h1>
+        
+        <article class="social-icon"><br>
+        <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook1.0.jpg" alt="Facebook logo"></a>
+        <p>/boomenergy</p>
+        </article>
+        <article class="social-icon"><br>
+        <a href="https://www.instagram.com/" target="_blank"><img src="./img/insta1.0.jpg" alt="Instgram logo" ></a>
+        <p>@BoomEnergy</p>
+        </article>
+        <article class="social-icon"><br>
+        <a href="https://twitter.com/?lang=nl" target="_blank"><img src="./img/twitter1.0.jpg" alt="Twitter logo"></a>
+        <p>@BoomEnergy</p>
+        </article>
+        </article>
+        </section>
+</footer>
+</html>

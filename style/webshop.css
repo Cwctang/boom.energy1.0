@@ -1,0 +1,615 @@
+* {
+    padding: 0 auto;
+    margin: 0;
+}
+html {
+    background-color: #0D172A;
+    font-family: 'Oswald', sans-serif;;
+}
+@media only screen and (max-width: 768px) {
+
+    /*HAMBURGER MENU*/
+
+    #drop-nav {
+        display: flex;
+        padding: 1%;
+        width: 30px;
+        cursor: pointer;
+        color: white;
+        margin-left: 80%;
+        font-size: 40px;
+        margin-top: 2vh;
+    }
+    #nav-box{
+        overflow: hidden;
+        height: 0px;
+        margin-top: -2vh;
+        transition: ease-in-out 0.7s;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: ease-in-out 0.7s;
+        margin-top: 2vh;
+    }
+    #menu a {
+        margin: 0;
+        padding: 1%;
+        width: 100%;
+        background-color: #0D172A;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+        transition: ease-in-out 0.5s;
+        align-items: center;
+    }
+    #menu a:hover {
+        color: orange;
+    }
+    .logo {
+        position: absolute;
+        float: left;
+        margin-top: 1vh;
+        margin-left: 2vh;
+        width: 100px;
+    }
+
+    /*HAMBURGER MENU*/
+
+    /*KOP-EEN*/
+
+    p {
+        color: white;
+        font-size: 20px;
+    }
+    h1 {
+        color: white;
+        font-size: 30px;
+    }
+    h2 {
+        color:#FF8700;
+        font-size: 40px;
+    }
+    .orange-image {
+        display: none;
+    }
+    .kop-een {
+        margin-top: 15vw;
+        text-align: center;
+    }
+    .btn {
+        border: none;
+        background-color: inherit;
+        padding: 18px 35px;
+        font-size: 20px;
+        cursor: pointer;
+        display: inline-block;
+        border: 2px solid #FF8700;
+        border-radius: 100px/100px;
+        color: orange;
+        margin-top: 6vw;
+    }
+    .btn:hover {
+        background-color:#FF8700;
+        color: white;
+    }
+    .btn2:hover {
+        background-color:#FF8700;
+        color: white;
+    }
+
+    /*KOP-EEN*/
+
+    /*body*/
+    #desktop-orange{
+        display: none;
+    }
+
+    #mobile-orange{
+        display: block;
+        display: flex;
+        width: 90%;
+        margin-top: 8%;
+        padding-left: 2%;
+        margin-top: 10%;
+
+    }
+    .mobile-orange-img img{
+        padding-left: 0%;
+        height: 275px;
+        width: 150px;
+        padding-top: 25%;
+    }
+    .mobile-webshop-info-1{
+        margin-right: 5%;
+        margin-top: 0%;
+    }
+    .mobile-webshop-info-2{
+        padding-top: 5px;
+        font-size: 0.3rem;
+    }
+    .mobile-webshop-info-3{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 0.3rem;
+    }
+    .mobile-webshop-info-4{
+        padding-top: 5px;
+        padding-bottom: 0px;
+        font-size: 0.3rem;
+    }
+
+    table{
+
+        border-collapse: collapse;
+        width: 200px;
+        height: 100px;
+        padding-left: 5%;
+    }
+    td, th{
+        border:  solid 0.1px white;
+        text-align: center;
+        /*padding: 1vw, 1vh;*/
+        color: white;
+        justify-content: flex-start;
+    }
+    td{
+        text-align: start;
+        font-size: 0.5rem;
+    }
+    th{
+        font-size: 0.8rem;
+    }
+
+
+    .mobile-webshop-prijs{
+        padding-top: 40%;
+        margin-top: 30%;
+        padding-left: 18%;
+        padding-right: 10%;
+    }
+   .mobile-webshop-prijs h2{
+       color: white;
+       font-size: 1.0rem;
+   }
+   .mobile-webshop-prijs p{
+        color: grey;   
+        font-size: 0.8rem;    
+}
+
+
+.mobile-webshop-button{
+    padding-top: 0%;
+    padding-right: 2%;
+    margin-top: 15%;
+    align-items: center;
+}
+.mobile-webshop-button img{
+    float: right;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    padding-right: 3%;
+}
+.mobile-per-tray{
+    background-color: #FF5858;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 175px;
+    text-align: left;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    
+}    
+.mobile-per-tray-2{
+    background-color: #FF5858;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 175px;
+    text-align: left;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-top: 2%;
+}
+
+
+    .mobile-webshop-info-1-orange h1{
+        color: orange; 
+        padding-top: 5%; 
+        font-size: 1.3rem; 
+    }
+    .mobile-webshop-info-1-orange h3{
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .mobile-webshop-info-1-orange p{
+        color: white;
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    .mobile-webshop-info-1-orange h1{
+        color: orange; 
+        padding-top: 5%; 
+        font-size: 1.3rem; 
+    }
+    .mobile-webshop-info-1-orange h3{
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .mobile-webshop-info-1-orange p{
+        color: white;
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+
+    .mobile-webshop-info-1-apple h1{
+        color: #35AB35;   
+        padding-top: 5%;  
+        font-size: 1.3rem; 
+    }
+    .mobile-webshop-info-1-apple h3{
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .mobile-webshop-info-1-apple p{
+        color: white;
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+
+    .mobile-webshop-info-1-strawberry h1{
+        color: #C41F1F;   
+        padding-top: 5%;  
+        font-size: 1.3rem; 
+    }
+    .mobile-webshop-info-1-strawberry h3{
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .mobile-webshop-info-1-strawberry p{
+        color: white;
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    .mobile-orange-img img{
+        padding-left: 5%;
+        height: 275px;
+        width: 150px;
+        margin-top: 10%;
+        padding-right: 20%;
+    }
+    .mobile-apple-img img{
+        padding-left: 5%;
+        height: 275px;
+        width: 150px;
+        margin-top: 20%;
+        padding-right: 20%;
+    }
+    .mobile-strawberry-img img{
+        padding-left: 5%;
+        height: 275px;
+        width: 150px;
+        margin-top: 20%;
+        padding-right: 20%;
+    }
+
+    #Footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #0D172A;
+        color: white;
+    } 
+ 
+    p {
+        color: white;
+        font-size: 0.6rem;
+    }
+    
+    h1 {
+        color: white;
+        font-weight: bold;
+        padding-left: 4px;
+        font-size: 1.0rem;
+        }
+             
+    .adres-contact-media {
+        float: right;
+        padding-right: 5%;
+        color: white;
+    }
+        
+    .adres-contact-media img{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+    }
+        
+    .adres-contact-media p{
+        padding-left: 50%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    /*body*/
+}
+@media only screen and (min-width: 768px) {
+
+    /*HAMBURGER MENU*/
+
+    #drop-nav {
+        display: none;
+    }
+    #menu {
+        display: contents;
+    }
+    #menu a, li {
+        padding: 1vw;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    #menu a:hover {
+        color: orange;
+    }
+    #nav-box {
+        margin-right: 1.5vw;
+        margin-top: 1.5vw;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo {
+        margin-left: 1vw;
+        margin-top: 1vw;
+        width: 130px;
+    }
+
+    /*HAMBURGER MENU*/
+
+    /*body*/
+    #mobile-orange{
+        display: none;
+    }
+    #desktop-orange{
+        display: block;
+        display: flex;
+        width: 90%;
+        margin-top: 3%;
+        justify-content: space-around;
+        margin-left: 4%;
+    }
+    .desktop-webshop-info-1{
+        margin-right: 5%;
+        margin-top: 2%;
+
+    }
+
+  
+    .desktop-webshop-info-2{
+        padding-top: 10px;
+        font-size: 0.8rem;
+    }
+    .dedesktop-webshop-info-3{
+        padding-top: 10%;
+        padding-bottom: 5%;
+        font-size: 0.8rem;
+    }
+    .desktop-webshop-info-4{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 0.8rem;
+    }
+   
+
+    table{
+        justify-content: space-around;
+        border-collapse: collapse;
+        width: 350px;
+        height: 150px;
+    }
+    td, th{
+        border:  solid 0.1px white;
+        text-align: center;
+        /*padding: 1vw, 1vh;*/
+        color: white;
+        justify-content: flex-start;
+    }
+    td{
+        text-align: start;
+    }
+    .desktop-webshop-prijs{
+        padding-top: 2%;
+        margin-top: 28%;
+    padding-left: 3%;
+        padding-right: 3%;
+    }
+   .desktop-webshop-prijs h2{
+       color: white;
+   }
+   .desktop-webshop-prijs p{
+    color: grey;       
+}
+    .desktop-webshop-button{
+        padding-top: 2%;
+        padding-right: 2%;
+        margin-top: 28%;
+        align-items: center;
+    }
+    .desktop-webshop-button img{
+        float: right;
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+        padding-right: 3%;
+    }
+    .per-tray{
+        background-color: #FF5858;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 300px;
+        text-align: left;
+        border: none;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        
+    }    
+    .per-tray-2{
+        background-color: #FF5858;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 300px;
+        text-align: left;
+        border: none;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        margin-top: 2%;
+    }
+    .desktop-webshop-info-1-orange h1{
+        color: orange; 
+        padding-top: 5%;  
+    }
+    .desktop-webshop-info-1-orange h3{
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .desktop-webshop-info-1-orange p{
+        color: white;
+        text-align: center;
+    }
+
+
+    .desktop-webshop-info-1-apple h1{
+        color: #35AB35;   
+        padding-top: 5%;  
+    }
+    .desktop-webshop-info-1-apple h3{
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .desktop-webshop-info-1-apple p{
+        color: white;
+        text-align: center;
+    }
+
+
+    .desktop-webshop-info-1-strawberry h1{
+        color: #C41F1F;   
+        padding-top: 5%;  
+    }
+    .desktop-webshop-info-1-strawberry h3{
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .desktop-webshop-info-1-strawberry p{
+        color: white;
+        text-align: center;
+    }
+
+    .desktop-orange-img img{
+        padding-left: 10%;
+        height: 550px;
+        width: 300px;
+        margin-top: 20%;
+        padding-right: 20%;
+    }
+    .desktop-apple-img img{
+        padding-left: 10%;
+        height: 550px;
+        width: 300px;
+        margin-top: 20%;
+        padding-right: 20%;
+    }
+    .desktop-strawberry-img img{
+        padding-left: 10%;
+        height: 550px;
+        width: 300px;
+        margin-top: 20%;
+        padding-right: 20%;
+    }
+
+    /*body*/ 
+    /*footer*/
+    #Footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #0D172A;
+        color: white;
+    } 
+ 
+    p {
+        color: white;
+    }
+    
+    h1 {
+        color: white;
+        font-weight: bold;
+        }
+    .adres-contact-media {
+        float: right;
+        padding-right: 5%;
+        color: white;
+        flex-direction: row;
+    }
+        
+    .adres-contact-media img{
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+    }
+        
+    .adres-contact-media p{
+        padding-left: 15%;
+    }
+    .adres-contact-media h1{
+        padding-bottom: 10%;
+    }
+    .social-icon{
+        display: flex;
+        margin-top: 8%;
+
+    }
+    /*footer*/
+}
+
+
+/*
+<button class="per-tray" id="accPane"><img src="./img/winkelwagen icon.png" alt="">  Per Tray</button><br>
+<button class="per-tray-2" id="accPane2"><img src="./img/winkelwagen icon.png" alt=""> Per 10 Tray</button>
+*/

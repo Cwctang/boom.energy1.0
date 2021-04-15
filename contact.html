@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="language" content="NL">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Contact">
+	<meta name="author" content="B Soeteman">
+    <meta name="keywords" content="Contact"> 
+    <title>Contact</title>
+    <link href="./style/contact.css" rel="stylesheet" type="text/css">
+    <script src="./js/contact.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<header>
+    <img src="./img/Logo Energy.png" class="logo">
+    <p id="drop-nav">&#9776;</p>
+    <article id="nav-box">
+        <nav id="menu">
+            <a href="index.html">Homepage</a>
+            <a href="bedrijfsinfo.html">Bedrijfsinfo</a>
+            <a href="evenementen.php">Nieuws & Evenement</a>
+            <a href="aanbiedingen.php">Aanbiedingen</a>
+            <a href="webshop.html">Webshop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </article>
+</header>
+<body>
+    <h1 style="padding-left: 100px;">Contactformulier</h1>
+    <form action="#">
+        <table>
+            <tr>
+                <td>Voornaam</td><td><input class="item-1" type="text" name="voornaam" placeholder="Vul hier je voornaam in"></td>
+                <td>Achternaam</td><td><input class="item-4" type="text" name="achternaam" placeholder="Vul hier je achternaam in"></td>
+            </tr>
+            <tr>
+                <td>Telefoonnummer</td><td><input class="item-2" type="text" name="telefoonnummer" placeholder="Vul hier je telefoonnummer in"></td>
+                <td>Email</td><td><input class="item-5" type="email" name="email" placeholder="Vul hier een email in"></td>
+            </tr>
+            
+        </table>
+                <article class="nieuwsbrief">
+                    <span style="padding-right: 5vw;">Nieuwsbrief</span>
+                    <label for="ja">Ja</label>
+                    <input type="radio" name="nieuwsbrief" value="ja">
+                    <label for="nee">Nee</label>
+                    <input type="radio" name="nieuwsbrief" value="nee">
+                </article>
+                <article class="voorwaarden">
+                    <span>Akkoord met privacy voorwaarden</span>
+                    <input type="checkbox" name="akkoord" value="akkoord">
+                </article>
+            <section>
+            <input class="item-button" type="button" value="verzenden">
+            </section>
+        </form>
+        <section class="googlemaps">
+        <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.3213636988603!2d4.489442815942738!3d52.14666517158144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c663d413a42f%3A0xcaddc0f3c590aca3!2smboRijnland!5e0!3m2!1snl!2snl!4v1616591983336!5m2!1snl!2snl" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+      
+</body>
+<footer>
+    <section id="Footer">
+        <article class="adres-tijd">
+        <h1 class="adres" style="color: #FF8700; padding-left: 15px;">Adres:</h1><br>
+        <p>Betaplein 18</p>
+        <p>2321 KS</p>
+        <p>Leiden</p>
+        </article>
+        <article class="adres-tijd">
+        <h1 style="color: #FF8700;">Contacgegevens:</h1><br>
+        <p style="color: #FF8700;">Telefoonnummer:</p>
+        <p>+310882221777</p><br>
+        <p style="color: #FF8700;">Email:</p>
+        <p>boom.energy@gmail.com</p>
+        </article>
+        <article class="adres-contact-media">
+        <h1 style="color: #FF8700;">Social Media:</h1>
+        
+        <article class="social-icon"><br>
+        <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook1.0.png" alt="Facebook logo"></a>
+        <p>/boomenergy</p>
+        </article>
+        <article class="social-icon"><br>
+        <a href="https://www.instagram.com/" target="_blank"><img src="./img/insta1.0.png" alt="Instgram logo" ></a>
+        <p>@BoomEnergy</p>
+        </article>
+        <article class="social-icon"><br>
+        <a href="https://twitter.com/?lang=nl" target="_blank"><img src="./img/twitter1.0.png" alt="Twitter logo"></a>
+        <p>@BoomEnergy</p>
+        </article>
+        </article>
+        </section>
+</footer>
+</html>

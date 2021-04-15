@@ -1,0 +1,469 @@
+* {
+    padding: 0 auto;
+    margin: 0;
+}
+html {
+    background-color: #0D172A;
+    font-family: 'Oswald', sans-serif;;
+}
+@media only screen and (max-width: 768px) {
+
+    /*HAMBURGER MENU*/
+
+    #drop-nav {
+        display: flex;
+        padding: 1%;
+        width: 30px;
+        cursor: pointer;
+        color: white;
+        margin-left: 80%;
+        font-size: 40px;
+        margin-top: 2vh;
+    }
+    #nav-box{
+        overflow: hidden;
+        height: 0px;
+        margin-top: -2vh;
+        transition: ease-in-out 0.7s;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: ease-in-out 0.7s;
+        margin-top: 2vh;
+    }
+    #menu a {
+        margin: 0;
+        padding: 1%;
+        width: 100%;
+        background-color: #0D172A;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+        transition: ease-in-out 0.5s;
+        align-items: center;
+    }
+    #menu a:hover {
+        color: orange;
+    }
+    .logo {
+        position: absolute;
+        float: left;
+        margin-top: 1vh;
+        margin-left: 2vh;
+        width: 100px;
+    }
+
+    /*HAMBURGER MENU*/
+
+    /*KOP-EEN*/
+
+    p {
+        color: white;
+        font-size: 15px;
+    }
+    h1 {
+        color: white;
+        font-size: 20px;
+    }
+    h2 {
+        color:#FF8700;
+        font-size: 30px;
+    }
+    .orange-image {
+        display: none;
+    }
+    .kop-een {
+        margin-top: 15vw;
+        text-align: center;
+    }
+    .btn {
+        border: none;
+        background-color: inherit;
+        padding: 18px 35px;
+        font-size: 20px;
+        cursor: pointer;
+        display: inline-block;
+        border: 2px solid #FF8700;
+        border-radius: 100px/100px;
+        color: orange;
+        margin-top: 6vw;
+    }
+    .btn:hover {
+        background-color:#FF8700;
+        color: white;
+    }
+    .btn2:hover {
+        background-color:#FF8700;
+        color: white;
+    }
+
+    /*KOP-EEN*/
+
+    /*KOP-TWEE*/
+
+    .text-een {
+        margin-bottom: 3vw;
+        margin-top: 9vw;
+        text-align: center;
+    }
+    .image {
+        position: relative;
+        width: 200px;
+        border: 2px solid #FF8700;
+        padding: 2vw;
+        margin: 1vw;
+    }
+    .image__img {
+        display: block;
+        width: 100%;
+    }
+    
+    .image__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+    
+    .image__overlay--blur {
+        backdrop-filter: blur(5px);
+    }
+    
+    .image__overlay--primary {
+        background: #ff88008c;
+    }
+    
+    .image__overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+    
+    .image__overlay:hover {
+        opacity: 1;
+    }
+    
+    .image__overlay:hover > * {
+        transform: translateY(0);
+    }
+    
+    .image__title {
+        font-size: 1.8em;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px;
+        margin-bottom: 3vh;
+    }
+    
+    .image__description {
+        font-size: 1.25em;
+        margin-top: 0.25em;
+    }
+    .blikjes {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*KOP-TWEE*/
+
+    .w3-content {
+        display: none;
+    }
+    .kop-twee {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+        text-align: center;
+    }
+
+    /*KOP-TWEE*/
+
+    /*SLIDESHOW*/
+
+    .slideshow-container {
+        display: none;
+    }
+
+    /*SLIDESHOW*/
+
+    /*FOOTER*/
+    
+    #Footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #0D172A;
+        color: white;
+    } 
+    
+    p {
+        color: white;
+        font-size: 0.6rem;
+        padding-right: 50px;
+    }
+        
+    h1 {
+        color: white;
+        font-weight: bold;
+        padding-left: 4px;
+        font-size: 1.0rem;
+    }
+        
+    .adres-contact-media {
+        float: right;
+        padding-right: 5%;
+        color: white;
+    }
+        
+    .adres-contact-media img{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+    }
+        
+    .adres-contact-media p{
+        padding-left: 50%;
+    }
+ 
+    .adres {
+        margin-left: -12px;
+    }
+
+    /*FOOTER*/
+}
+@media only screen and (min-width: 768px) {
+
+    /*HAMBURGER MENU*/
+
+    #drop-nav {
+        display: none;
+    }
+    #menu {
+        display: contents;
+    }
+    #menu a, li {
+        padding: 1vw;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    #menu a:hover {
+        color: orange;
+    }
+    #nav-box {
+        margin-right: 1.5vw;
+        margin-top: 1.5vw;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo {
+        margin-left: 1vw;
+        margin-top: 1vw;
+        width: 130px;
+    }
+
+    /*HAMBURGER MENU*/
+
+    /*KOP-EEN*/
+
+    p {
+        color: white;
+        font-size: 20px;
+    }
+    h1 {
+        color: white;
+        font-size: 30px;
+    }
+    h2 {
+        color:#FF8700;
+        font-size: 40px;
+    }
+    .kop-een {
+        margin-top: 3vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .btn {
+        border: none;
+        background-color: inherit;
+        padding: 18px 35px;
+        font-size: 20px;
+        cursor: pointer;
+        display: inline-block;
+        border: 2px solid #FF8700;
+        border-radius: 100px/100px;
+        color: orange;
+        margin-top: 3vw;
+    }
+    .btn:hover {
+        background-color:#FF8700;
+        color: white;
+    }
+    .btn2:hover {
+        background-color:#FF8700;
+        color: white;
+    }
+    .orange-image {
+        margin-top: 2vw;
+    }
+
+    /*KOP-EEN*/
+
+    /*KOP-TWEE*/
+
+    .text-een {
+        margin-bottom: 3vw;
+        margin-top: 9vw;
+        text-align: center;
+    }
+    .image {
+        position: relative;
+        width: 200px;
+        border: 2px solid #FF8700;
+        padding: 2vw;
+        margin: 1vw;
+    }
+    .image__img {
+        display: block;
+        width: 100%;
+    }
+    
+    .image__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+    
+    .image__overlay--blur {
+        backdrop-filter: blur(5px);
+    }
+    
+    .image__overlay--primary {
+        background: #ff88008c;
+    }
+    
+    .image__overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+    
+    .image__overlay:hover {
+        opacity: 1;
+    }
+    
+    .image__overlay:hover > * {
+        transform: translateY(0);
+    }
+    
+    .image__title {
+        font-size: 1.8em;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .image__description {
+        font-size: 1.25em;
+        margin-top: 0.25em;
+    }
+    .blikjes {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    /*KOP-TWEE*/
+
+    .kop-twee {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+    }
+    .w3-content {
+        margin-top: 6vw;
+    }
+
+    /*KOP-TWEE*/
+
+    /*FOOTER*/
+
+    #Footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #0D172A;
+        color: white;
+        } 
+        
+    p {
+        color: white;
+    }
+    
+    h1 {
+        color: white;
+        font-weight: bold;
+    }
+ 
+    .adres-contact-media {
+        float: right;
+        color: white;
+        flex-direction: row;
+    }
+        
+    .adres-contact-media img{
+        height: 50px;
+        width: 50px;
+    }
+        
+    .adres-contact-media p{
+        padding-left: 15%;
+    }
+ 
+    .adres-contact-media h1{
+        padding-bottom: 10%;
+    }
+ 
+    .social-icon{
+        display: flex;
+        margin-top: 8%;
+    }
+
+    /*FOOTER*/
+
+}
